@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Jakarta+Sans+Display:wght@400;700&display=swap');
+@import 'variables.scss';
+
+body{
+    background-color: white;
+    font-family: 'Jakarta Sans Display', sans-serif;
+    color: black;
+}
+
+
+.section-navbar {
+    width: 100%;
+    border-radius: 0px 0px 30px 30px;
+    background: linear-gradient(to bottom, $primary, rgba(14, 74, 194, 0));
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    color : white
+}
+.section-navbar ul {
+    list-style: none;
+    display: flex;
+}
+.section-navbar li {
+    margin-inline: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navbar-branding{
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.navbar-branding img.logo {
+    margin-right: 10px; /* Menambahkan jarak antara gambar dan teks */
+  }
+
+  .navbar-branding span {
+    line-height: 1.5; /* Mengatur jarak baris teks */
+    font-size: 18px;
+
+  }
+
+.logo {
+    max-width: 50px;
+}
+.active {
+    background: rgb(255, 217, 0);
+    padding: 5px 20px;
+    border-radius: 10px;
+    color : $primary
+}
+
+// hero
+.hero{
+    width: 100%;
+}
+.hero img{
+    width: 100%;
+}
+
+.greeting{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url('/assets/images/6.png');
+    z-index: 1;
+    position: relative;
+    top: -200px;
+    padding-top: 200px;
+    color : white;
+    max-height: 1200px;
+    overflow: hidden;
+}
+.left-side{
+    width: 50%;
+    padding: 20px;
+    margin-left: 20px;
+}
+.right-side{
+   margin: auto 0;
+}
+.right-side img{
+    width: 70%;
+    height: auto;
+    float: right;
+    object-fit: cover;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+}
