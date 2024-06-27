@@ -7,9 +7,18 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  modules: ["@nuxt/ui"],
+  modules: ["@nuxt/ui", "@nuxtjs/tailwindcss", "@nuxt/icon"],
   css : [
     '~/assets/styles/variables.scss',
     '~/assets/styles/main.scss',
-  ]
+  ],
+  tailwindcss: {
+    cssPath: ['~/assets/css/tailwind.css', { injectPosition: "first" }],
+    configPath: 'tailwind.config',
+    exposeConfig: {
+      level: 2
+    },
+    config: {},
+    viewer: true,
+  }
 })
